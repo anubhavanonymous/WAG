@@ -1,0 +1,83 @@
+#!bin/bash
+#-------------------------------------
+#     This project is Open Source !
+#       Coded by Anubhav Kashyap
+#      github.com/anubhavanonymous
+#     instagram.com/anubhavanonymous
+#-------------------------------------
+apt install wget -y
+wget -q --spider https://github.com/anubhavanonymous
+
+if [ $? -eq 0 ]; then
+    just
+else
+    clear
+    echo -e "\e[1;91m‎‎‏‏ ‎"
+    printf '''
+ __      __  _____    ________
+/  \    /  \/  _  \  /  _____/
+\   \/\/   /  /_\  \/   \  ___
+ \        /    |    \    \_\  \
+  \__/\  /\____|__  /\______  /
+       \/         \/        \/
+
+    Whatsapp API Generator
+    '''
+    sleep 1
+    echo ""
+    echo ""
+    echo -e "\e[92m[\e[91m~\e[92m]\e[93m You are not connected to internet !\e[93m"
+    echo ""
+    echo -e "\e[92m[\e[91m~\e[92m]\e[93m Please connect and try again !!\e[93m"
+    echo ""
+    echo ""
+    exit
+fi
+clear
+f=9
+for var in f ; do
+for col in {1..7} ; do
+printf -v $var$col %b "\x1b[${!var}${col}m"
+done
+done
+echo -e "\e[92m "
+printf '''
+ __      __  _____    ________ 
+/  \    /  \/  _  \  /  _____/ 
+\   \/\/   /  /_\  \/   \  ___ 
+ \        /    |    \    \_\  \
+  \__/\  /\____|__  /\______  /
+       \/         \/        \/ 
+
+    Whatsapp API Generator
+ '''
+sleep 1
+echo -e "   \e[36mAuthor:Anubhav Kashyap"
+printf "\n"
+printf "%s[%s~%s] %sInput Number %s: %s" ${f2} ${f7} ${f2} ${f7} ${f5} ${f6}
+read nomor
+nomor=$(echo $nomor | sed 's/^0/62/g')
+printf "%s[%s~%s] %sInput Text   %s: %s" ${f2} ${f7} ${f2} ${f7} ${f5} ${f6}
+read text
+text=$(echo $text | tr [[:space:]] '+' | sed 's/+$//g')
+link="https://api.whatsapp.com/send?phone=$nomor&text=$text"
+printf "\n"
+printf "%s[%s+%s] %sLink %s:%s %s" ${f4} ${f2} ${f4} ${f6} ${f5} ${f7} "$link"
+echo ""
+echo ""
+printf "\e[1;92m[\e[0m1\e[1;92m]\e[0m\e[1;39m Launch URL \e[0m\n"
+printf "\e[1;92m[\e[0m2\e[1;92m]\e[0m\e[1;39m Exit \e[0m\n"
+printf "\n"
+read -p $'\e[1;92m[\e[0m~\e[1;92m]\e[0m\e[1;39m \e[96mSelect Option \e[0m>>> ' options
+if [ "$options" -eq "1" ];then
+termux-open-url "$link"
+echo ""
+echo -e "\e[93mThanks for using WAG !"
+echo ""
+fi
+if [ "$options" -eq "2" ];then
+echo ""
+echo -e "\e[1;91m‎‎‏‏ Thanks for using WAG !"
+echo ""
+exit
+fi
