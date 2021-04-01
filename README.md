@@ -1,4 +1,4 @@
-# WAG ⚡
+# WAG 
 * `WAG Simple shell script to generate WhatsApp apis`
 
 ## Usage
@@ -8,7 +8,7 @@ git clone https://github.com/anubhavanonymous/WAG
 ```
 Go to the WAG Directory
 ```bash
-cd XLR8_BOMBER
+cd WAG
 ```
 Just Run it
 ```bash
