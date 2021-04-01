@@ -1,6 +1,5 @@
 # WAG
-* `Simple shell script to generate WhatsApp apis`
-
+* `WAG Simple shell script to generate WhatsApp apis`
 
 ## Usage
 Clone it by
@@ -15,8 +14,6 @@ Just Run it
 ```bash
 bash WAG
 ```
-
-* `Enjoy 🔥`
 
 ## Screenshot (Termux)
 
