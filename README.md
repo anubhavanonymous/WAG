@@ -2,7 +2,7 @@
 * `WAG is a Simple shell script to generate WhatsApp apis`
 
 ## Usage
-Clone it by
+Clone the Repo
 ```bash
 git clone https://github.com/anubhavanonymous/WAG
 ```
@@ -10,7 +10,7 @@ Go to the WAG Directory
 ```bash
 cd WAG
 ```
-Just Run it
+Run the Script !
 ```bash
 bash WAG
 ```
