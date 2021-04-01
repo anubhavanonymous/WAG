@@ -15,14 +15,15 @@ Just Run it
 bash WAG
 ```
 
-##Note
+## Note
 You can enter the phone number in both form
 
 ```bash
 +910123456789
 ```
 ```bash
-910123456789```
+910123456789
+```
 
 * `where 91 or +91 is the country code !`
 
