@@ -16,7 +16,7 @@ bash WAG
 ```
 
 ## Note
-You can enter the phone number in both form
+You can enter the phone number in both format
 
 ```bash
 910123456789
