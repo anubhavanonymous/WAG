@@ -1,5 +1,5 @@
 # WAG 
-* `WAG is a Simple shell script to generate WhatsApp apis`
+* `WAG is a Simple shell script to generate WhatsApp APIs`
 
 ## Usage
 Clone the Repo
